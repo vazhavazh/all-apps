@@ -12,7 +12,6 @@ export default function Accordian() {
 
 	const handleSingleSelection = (currentId) => {
 		setSelected(currentId === selected ? null : currentId);
-		console.log(currentId);
 	};
 	const handleEnableButton = () => {
 		setEnableMultiSelection(!enableMultiSelection);
@@ -21,7 +20,6 @@ export default function Accordian() {
 		let copyOfMultiplySelection = [...multiple];
 
 		const indexOfCurrentId = copyOfMultiplySelection.indexOf(currentId);
-		console.log(indexOfCurrentId);
 		if (indexOfCurrentId === -1) {
 			copyOfMultiplySelection.push(currentId);
 		} else {
@@ -29,7 +27,6 @@ export default function Accordian() {
 		}
 		setMultiple(copyOfMultiplySelection);
 	};
-	console.log(selected, multiple);
 	return (
 		<div className='wrapper'>
 			<button onClick={handleEnableButton}>Enable Multi selection</button>
