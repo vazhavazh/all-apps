@@ -52,9 +52,9 @@ function ImageSlider({ url, page = 1, limit = 5 }) {
 							className='current-image'
 						/>
 				  ))
-                : null}
-            <BsArrowBarRight className="arrow arrow-right" />
-            <span className="circle-indicators"></span>
+				: null}
+			<BsArrowBarRight className='arrow arrow-right' />
+			<span className='circle-indicators'></span>
 		</div>
 	);
 }
